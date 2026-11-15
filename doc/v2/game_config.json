@@ -1,0 +1,75 @@
+{
+  "title": "The Locked Library",
+  "intro": "You wake up on a cold wooden floor inside a locked library. Dust hangs in the air. You see a desk, a bookshelf, a painting, a locked drawer and a heavy door. Next to the door, a keypad sits behind a small metal panel.",
+  "start_revealed": ["desk", "bookshelf", "painting", "drawer", "door"],
+  "solutions": {
+    "drawer_code": "7319",
+    "door_code": "4815",
+    "key_item": "brass_key",
+    "key_target": "door"
+  },
+  "messages": {
+    "not_here": "There is nothing like that here.",
+    "not_possible": "That is not something you can do here.",
+    "search_nothing": "You search carefully but find nothing new.",
+    "win": "The keypad beeps. The heavy door swings open and cold fresh air rushes in. You have escaped the library!"
+  },
+  "help": "Type what you want to do in your own words. You can examine things, pick things up, look behind or under things, use an item on something, try a four-digit code on a lock, or ask what you are carrying.",
+  "objects": {
+    "desk": {
+      "aliases": ["desk", "table"],
+      "description": "A heavy oak desk covered in dust. An old diary lies on top.",
+      "reveals": ["diary"]
+    },
+    "bookshelf": {
+      "aliases": ["bookshelf", "bookcase", "shelf", "shelves"],
+      "description": "A tall bookshelf. Four books stand out because they are arranged differently from the others.",
+      "reveals": ["books"]
+    },
+    "books": {
+      "aliases": ["books", "book"],
+      "description": "Each of the four books has a handwritten number on its first page. From left to right the numbers are 7, 3, 1, 9."
+    },
+    "painting": {
+      "aliases": ["painting", "portrait", "picture", "frame"],
+      "description": "A portrait of a stern man with very watchful eyes. The heavy frame sits slightly away from the wall.",
+      "search_text": "You lift the heavy frame away from the wall. A small paper scrap is taped to the back of the painting.",
+      "search_done_text": "Behind the painting there is only the pale square where the paper scrap was taped.",
+      "reveals": ["paper_scrap"]
+    },
+    "drawer": {
+      "aliases": ["drawer"],
+      "description": "A small wooden drawer under the desk with a four-digit combination lock. It is locked.",
+      "description_open": "The drawer stands open.",
+      "unlock_text": "The combination lock clicks and the drawer slides open. Inside you see a brass key and a torn note.",
+      "reveals": ["brass_key", "torn_note"]
+    },
+    "door": {
+      "aliases": ["door", "keypad", "panel", "exit"],
+      "description": "A heavy oak door. Next to it, a four-digit keypad sits behind a small metal panel that is locked.",
+      "description_unlocked": "A heavy oak door. The metal panel is open and the four-digit keypad is ready."
+    }
+  },
+  "items": {
+    "diary": {
+      "name": "old diary",
+      "aliases": ["diary", "journal"],
+      "text": "The diary says: \"I hid my numbers in four books. Read them in the order they stand on the shelf.\""
+    },
+    "brass_key": {
+      "name": "brass key",
+      "aliases": ["brass key", "key"],
+      "text": "A small brass key, worn smooth. It looks like it would fit a tiny lock."
+    },
+    "torn_note": {
+      "name": "torn note",
+      "aliases": ["torn note", "note"],
+      "text": "The note says: \"The exit code begins with 48. The rest is hidden behind the eyes of the portrait.\""
+    },
+    "paper_scrap": {
+      "name": "paper scrap",
+      "aliases": ["paper scrap", "scrap", "paper"],
+      "text": "The scrap of paper has just two numbers written on it: 15."
+    }
+  }
+}
